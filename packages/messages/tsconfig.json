@@ -1,0 +1,15 @@
+{
+	"compilerOptions": {
+    "strict": true,
+    "target": "es2020",
+    "lib": ["es2020"],
+    "typeRoots": [],
+    "isolatedModules": true,
+    "noEmit": true,
+    "module": "esnext",
+    "esModuleInterop": true,
+		"declaration": true,
+		"outDir": "dist"
+  },
+  "include": ["index.ts"]
+}

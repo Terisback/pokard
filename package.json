@@ -1,0 +1,21 @@
+{
+	"name": "pokard",
+	"version": "0.0.1",
+	"description": "Poker with superpowers",
+	"license": "MIT",
+	"private": "true",
+	"author": {
+		"name": "Anton Zavodchikov",
+		"email": "terisbackno@gmail.com",
+		"url": "https://teris.dev/"
+	},
+	"packageManager": "pnpm@7.1.3",
+	"engines": {
+		"node": "^17.0.0",
+		"pnpm": "^7.0.0"
+	},
+	"type": "module",
+	"devDependencies": {
+		"typescript": "^4.7.2"
+	}
+}
