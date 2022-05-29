@@ -4,4 +4,10 @@
 
 <p>There is should be a card game</p>
 
-<Card>Пэнис</Card>
+<Card />
+
+<style global>
+	body {
+		background-color: rgb(47, 117, 177);
+	}
+</style>
