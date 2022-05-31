@@ -1,44 +1,39 @@
 <script lang="ts">
+	import { Suits } from "$lib/assets/suits";
 	import Card from "$lib/components/Card.svelte";
-	import Bugfix from "$lib/assets/suits/Bugfix.svelte";
-	import Eye from "$lib/assets/suits/Eye.svelte";
-	import Index from "$lib/assets/suits/Index.svelte";
-	import Send from "$lib/assets/suits/Send.svelte";
-	import Skip from "$lib/assets/suits/Skip.svelte";
-	import Swap from "$lib/assets/suits/Swap.svelte";
 </script>
 
 <p>There is should be a card game</p>
 
 <div class="cards">
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Bugfix} value={val} />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Bugfix} {value} />
 		{/each}
 	</div>
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Eye} value={val} --card-suit-color="#fec415" />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Eye} {value} --card-suit-color="#fec415" />
 		{/each}
 	</div>
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Index} value={val} --card-suit-color="#fec415" />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Index} {value} --card-suit-color="#fec415" />
 		{/each}
 	</div>
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Send} value={val} />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Send} {value} />
 		{/each}
 	</div>
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Skip} value={val} />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Skip} {value} />
 		{/each}
 	</div>
 	<div class="row">
-		{#each [1, 2, 3, 4, 5, 6, 7] as val}
-			<Card suit={Swap} value={val} --card-suit-color="#fec415" />
+		{#each [1, 2, 3, 4, 5, 6, 7] as value}
+			<Card suit={Suits.Swap} {value} --card-suit-color="#fec415" />
 		{/each}
 	</div>
 </div>
