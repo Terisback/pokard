@@ -1,10 +1,10 @@
 <script lang="ts">
 	import Bugfix from "$lib/assets/Bugfix.svelte";
-	import Eye from "$lib/assets/suits/Eye.svelte";
-	import Index from "$lib/assets/suits/Index.svelte";
-	import Send from "$lib/assets/suits/Send.svelte";
-	import Skip from "$lib/assets/suits/Skip.svelte";
-	import Swap from "$lib/assets/suits/Swap.svelte";
+	import Eye from "$lib/assets/Eye.svelte";
+	import Index from "$lib/assets/Index.svelte";
+	import Send from "$lib/assets/Send.svelte";
+	import Skip from "$lib/assets/Skip.svelte";
+	import Swap from "$lib/assets/Swap.svelte";
 	import { Suits } from "$lib/assets/suits";
 	import type { SvelteComponent } from "svelte";
 
