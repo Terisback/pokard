@@ -10,41 +10,49 @@
 
 <p>There is should be a card game</p>
 
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Bugfix} value={val} />
-	{/each}
-</div>
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Eye} value={val} --card-suit-color="#fec415" />
-	{/each}
-</div>
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Index} value={val} --card-suit-color="#fec415" />
-	{/each}
-</div>
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Send} value={val} />
-	{/each}
-</div>
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Skip} value={val} />
-	{/each}
-</div>
-<div class="row">
-	{#each [1, 2, 3, 4, 5, 6, 7] as val}
-		<Card suit={Swap} value={val} --card-suit-color="#fec415" />
-	{/each}
+<div class="cards">
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Bugfix} value={val} />
+		{/each}
+	</div>
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Eye} value={val} --card-suit-color="#fec415" />
+		{/each}
+	</div>
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Index} value={val} --card-suit-color="#fec415" />
+		{/each}
+	</div>
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Send} value={val} />
+		{/each}
+	</div>
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Skip} value={val} />
+		{/each}
+	</div>
+	<div class="row">
+		{#each [1, 2, 3, 4, 5, 6, 7] as val}
+			<Card suit={Swap} value={val} --card-suit-color="#fec415" />
+		{/each}
+	</div>
 </div>
 
 <style>
 	:global(body) {
 		color: white;
 		background-color: #1e1e1e;
+	}
+
+	.cards {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
 	}
 
 	.row {
