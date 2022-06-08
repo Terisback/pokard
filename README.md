@@ -4,7 +4,7 @@
 
 Trying to jump into the [Cloudflare Developer Challenge](https://challenge.developers.cloudflare.com/)
 
-Deadline - 7 june
+~~Deadline - 7 june~~ failed
 
 ## Done with
 
