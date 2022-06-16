@@ -1,11 +1,13 @@
 {
-	"name": "@pokard/messages",
+	"name": "@pokard/models",
 	"version": "0.0.1",
-	"license": "MIT",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
 	"files": [
 		"dist"
 	],
-	"type": "module"
+	"type": "module",
+	"devDependencies": {
+		"typescript": "^4.7.3"
+	}
 }

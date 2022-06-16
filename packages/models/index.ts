@@ -71,3 +71,11 @@ export namespace Guess {
 		| { success: false; error: string };
 }
 
+export namespace Action {
+	export type Attack = {}
+
+	export interface Shadow {
+		
+	}
+}
+

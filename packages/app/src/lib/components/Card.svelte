@@ -5,7 +5,7 @@
 	import Send from "$lib/assets/Send.svelte";
 	import Skip from "$lib/assets/Skip.svelte";
 	import Swap from "$lib/assets/Swap.svelte";
-	import { Suits } from "$lib/assets/suits";
+	import { Suits } from "$lib/assets";
 	import type { SvelteComponent } from "svelte";
 
 	export let suit: Suits;
@@ -58,6 +58,7 @@
 		border-radius: 0.5em;
 		color: var(--card-suit-color, #57585a);
 		background-color: var(--card-background, white);
+		box-shadow: 0 0 0.5rem #000a;
 
 		display: flex;
 		justify-content: space-between;
