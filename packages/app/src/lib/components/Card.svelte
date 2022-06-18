@@ -35,33 +35,51 @@
 </script>
 
 <div class="card">
-	<div class="value">
-		<span>{value}</span>
-		<svelte:component this={suit_icon} />
-	</div>
+	<div class="card-face front">
+		<div class="value">
+			<span>{value}</span>
+			<svelte:component this={suit_icon} />
+		</div>
 
-	<div class="suit">
-		<svelte:component this={suit_icon} />
+		<div class="suit">
+			<svelte:component this={suit_icon} />
+		</div>
 	</div>
+	<div class="card-face back" />
 </div>
 
 <style>
 	.card {
-		--card-padding: 0.4rem;
-
 		position: relative;
 		width: 6rem;
-		padding: var(--card-padding);
+		transform-style: preserve-3d;
+		padding: 5px;
+	}
+	.card-face {
+		position: relative;
+		--card-padding: 0.4rem;
 		aspect-ratio: 64 / 89;
-		overflow: hidden;
-
+		padding: var(--card-padding);
 		border-radius: 0.5em;
+		backface-visibility: hidden;
+	}
+	.front {
 		color: var(--card-suit-color, #57585a);
 		background-color: var(--card-background, white);
 		box-shadow: 0 0 0.5rem #000a;
-
 		display: flex;
-		justify-content: space-between;
+		overflow: hidden;
+	}
+	.back {
+		transform: rotateY(180deg); /* Поворачиваем текст */
+		background-image: url("https://deti-online.com/img/raskraski-cat/druzhba-eto-chudo.jpg");
+		background-position: 50% 50%;
+		background-size: cover;
+		position: absolute;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
 	}
 
 	.value {

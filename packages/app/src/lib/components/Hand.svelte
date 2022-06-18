@@ -6,8 +6,8 @@
 		{ suit: Suits.Bugfix, value: 6 },
 		{ suit: Suits.Eye, value: 1 },
 		{ suit: Suits.Send, value: 2 },
-		// { suit: Suits.Skip, value: 5 },
-		// { suit: Suits.Index, value: 4 },
+		{ suit: Suits.Skip, value: 5 },
+		{ suit: Suits.Index, value: 4 },
 	];
 </script>
 
@@ -40,6 +40,7 @@
 		margin-left: -0.5rem;
 		margin-right: -0.5rem;
 		transition: all 0.1s;
+		transform: rotateY(180deg);
 	}
 
 	.card-wrapper:hover {
